@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soru Oyunu</title>
+    <link rel="stylesheet" href="/style.css"/>
+</head>
+<body>
+    <div class="page">
+        <h1 class="game-name">Soru Oyunu</h1>
+        <p id="question"></p>
+        <form>
+            <input type="radio" class="inputs" name="answer" value="a"> <span id="option-a"></span><br>
+            <input type="radio" class="inputs" name="answer" value="b"> <span id="option-b"></span><br>
+            <input type="radio" class="inputs" name="answer" value="c"> <span id="option-c"></span><br>
+            <input type="radio" class="inputs" name="answer" value="d"> <span id="option-d"></span><br>
+            <button type="button" onclick="checkAnswer()" class="kontrol-et">Kontrol et</button>
+        </form>
+        <p id="result"></p>
+        <p id="score"></p>
+        <button id="try-again">Tekrar dene!</button>
+        <div id="congrats-text"></div>
+        <canvas id="congrats"></canvas>
+    </div>
+
+    <script src="game.js"></script>
+</body>
+</html>

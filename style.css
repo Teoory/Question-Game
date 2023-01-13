@@ -1,0 +1,131 @@
+*{
+    background-color: #686868;
+    max-height: 450px;
+    color: #fff;
+    font-family: system-ui, sans-serif;
+}
+#congrats {
+    z-index: 99;
+    height: 900px;
+    width: 1080px;
+}
+#try-again {
+    display: none;
+    color: #fff;
+    background-color: brown;
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    font-weight: 900;
+    font-size: large;
+    cursor: pointer;
+}
+
+.page {
+    display: grid;
+    justify-items: center;
+}
+
+.game-name {
+    border: #fff solid 5px;
+    border-radius: 10px;
+    padding: 10px;
+    background: darkslategray;
+}
+
+#question {
+    max-width: 500px;
+    text-align: center;
+    font-size: x-large;
+    background: darkslategray;
+    border: solid 2px;
+    padding: 10px;
+}
+
+.kontrol-et {
+    padding: 10px;
+    margin: 50px;
+    cursor: pointer;
+    color: #fff;
+    background-color: green;
+    width: 120px;
+    height: 50px;
+    border-radius: 10px;
+    font-weight: 900;
+    font-size: larger;
+}
+
+
+.inputs {
+    margin: 5px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    -o-appearance: none;
+    appearance: none;
+    position: relative;
+    top: 13.33333px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 40px;
+    width: 40px;
+    transition: all 0.15s ease-out 0s;
+    background: #cbd1d8;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    margin-right: 0.5rem;
+    outline: none;
+    position: relative;
+    z-index: 1000;
+}
+.inputs:hover {
+    background: #9faab7;
+}
+.inputs:checked {
+    background: #40e0d0;
+}
+.inputs:checked::before {
+    width: 40px;
+    height: 40px;
+    display:flex;
+    font-size: 25px;
+    font-weight:bold;
+    position: absolute;
+    align-items:center;
+    justify-content:center;
+}
+.inputs:checked::after {
+    -webkit-animation: click-wave 0.65s;
+    -moz-animation: click-wave 0.65s;
+    animation: click-wave 0.65s;
+    background: #40e0d0;
+    content: '';
+    display: block;
+    position: relative;
+    z-index: 100;
+}
+.inputs.radio {
+    border-radius: 50%;
+}
+.inputs.radio::after {
+    border-radius: 50%;
+}
+
+@keyframes click-wave {
+    0% {
+      height: 40px;
+      width: 40px;
+      opacity: 0.35;
+      position: relative;
+    }
+    100% {
+      height: 200px;
+      width: 200px;
+      margin-left: -80px;
+      margin-top: -80px;
+      opacity: 0;
+    }
+}
